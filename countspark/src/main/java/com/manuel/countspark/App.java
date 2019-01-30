@@ -239,7 +239,7 @@ public class App
        objectRDD.buildIndex(PointRDDIndexType, false);
        objectRDD.indexedRawRDD.persist(StorageLevel.MEMORY_ONLY());
        List<Point> result = KNNQuery.SpatialKnnQuery(objectRDD, kNNQueryPoint, 1000, true);
-       System.out.println("The value for SpatialKnnQueryUsingIndex is saddsadsa " + result);
+       System.out.println("The value for SpatialKnnQueryUsingIndex is " + result);
    }
 
    /**
